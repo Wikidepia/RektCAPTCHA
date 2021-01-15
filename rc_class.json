@@ -1,0 +1,15 @@
+{
+    "cars":"car",
+    "taxis":"car",
+    "vehicle":"car",
+    "boats":"boat",
+    "a fire hydrant":"fire hydrant",
+    "fire hydrants":"fire hydrant",
+    "bicycles":"bicycle",
+    "traffic lights":"traffic light",
+    "motorcycles":"motorcycle",
+    "parking meters":"parking meter",
+    "buses":"bus",
+    "bus":"bus",
+    "vehicles":"car"
+ }
