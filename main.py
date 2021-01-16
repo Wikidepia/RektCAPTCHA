@@ -1,17 +1,19 @@
+import json
 import math
 import time
 from random import randint, uniform
-import json
-from rektcaptcha import Rekt
+
 import numpy as np
 import scipy.interpolate as si
 from PIL import Image
+from pyclick import HumanCurve
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from pyclick import HumanCurve
+
+from rektcaptcha import Rekt
 
 # Initialize selenium, model, class list
 rekt = Rekt()
@@ -46,7 +48,7 @@ def human_click(start_element=None, end_element=None, target_points=30):
         current_y += curve_y - current_y
         try:
             action.perform()
-        except: # Handle out-of-bound move
+        except:  # Handle out-of-bound move
             pass
     end_element.click()
 
