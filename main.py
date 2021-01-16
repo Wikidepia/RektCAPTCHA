@@ -130,8 +130,7 @@ def solve_captcha():
 
     # Inference
     img = Image.open("web_screenshot.png")  # PIL image
-    results = rekt.inference(img, max_column)
-    return results
+    return rekt.inference(img, max_column)
 
 
 def click_tiles(results):
