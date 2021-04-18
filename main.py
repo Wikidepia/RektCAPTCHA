@@ -17,7 +17,9 @@ from rektcaptcha import Rekt
 
 # Initialize selenium, model, class list
 rekt = Rekt()
-driver = webdriver.Chrome(executable_path=r"./chromedriver")
+options = webdriver.ChromeOptions()
+options.add_argument('--disable-blink-features=AutomationControlled')
+driver = webdriver.Chrome(executable_path=r"./chromedriver", options=options)
 with open("rc_class.json") as f:
     rc_class = json.load(f)
 
